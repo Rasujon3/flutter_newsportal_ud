@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1020011447369",
+    "project_id": "news-portal-app-d2c59",
+    "storage_bucket": "news-portal-app-d2c59.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1020011447369:android:c532acd08f9e92f681eb98",
+        "android_client_info": {
+          "package_name": "com.sujon.flutter_newsportal_ud"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1020011447369-g2e2kl37rqpga6t8bv7f651n0odlfoop.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuQlmC8rc2SY4wkHC2iAWGmBdeayvJTg8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1020011447369-g2e2kl37rqpga6t8bv7f651n0odlfoop.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
