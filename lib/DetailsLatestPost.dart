@@ -4,6 +4,7 @@ import 'dart:async';
 
 class LatestPostDetails extends StatefulWidget {
   DocumentSnapshot snapshot;
+
   LatestPostDetails(this.snapshot);
 
   @override
@@ -11,6 +12,13 @@ class LatestPostDetails extends StatefulWidget {
 }
 
 class _LatestPostDetailsState extends State<LatestPostDetails> {
+  Future<Null> getRefresh() async {
+    await Future.delayed(Duration(seconds: 3));
+    setState(() {
+      LatestPostDetails;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -75,7 +83,6 @@ class _LatestPostDetailsState extends State<LatestPostDetails> {
                           ),
                         ),
                       ),
-
                     ],
                   ),
                 ),
@@ -92,7 +99,6 @@ class _LatestPostDetailsState extends State<LatestPostDetails> {
               ],
             ),
           ),
-
         ],
       ),
     );
