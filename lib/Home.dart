@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'dart:async';
+import 'DetailsLatestPost.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -171,12 +172,17 @@ class _HomeState extends State<Home> {
                                     //mainAxisAlignment: MainAxisAlignment.start,
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
-                                      new Text(snapshot[index].data["title"],
-                                      maxLines: 1,
-                                      style: TextStyle(
-                                        fontSize: 22.0,
-                                        color: Colors.white,
-                                      ),
+                                      InkWell(
+                                        onTap: (){
+                                          Navigator.of(context).push(new MaterialPageRoute(builder: (context) => LatestPostDetails(snapshot[index])));
+                              },
+                                        child: new Text(snapshot[index].data["title"],
+                                        maxLines: 1,
+                                        style: TextStyle(
+                                          fontSize: 22.0,
+                                          color: Colors.white,
+                                        ),
+                                        ),
                                       ),
                                       new SizedBox(height: 5.0,),
                                       new Text(snapshot[index].data["content"],
