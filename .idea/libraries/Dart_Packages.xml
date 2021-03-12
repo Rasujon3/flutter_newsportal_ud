@@ -121,6 +121,13 @@
             </list>
           </value>
         </entry>
+        <entry key="flutter_slidable">
+          <value>
+            <list>
+              <option value="C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_slidable-0.5.7/lib" />
+            </list>
+          </value>
+        </entry>
         <entry key="flutter_test">
           <value>
             <list>
@@ -280,6 +287,7 @@
       <root url="file://C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core-0.4.5/lib" />
       <root url="file://C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core_platform_interface-1.0.4/lib" />
       <root url="file://C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core_web-0.1.1+2/lib" />
+      <root url="file://C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_slidable-0.5.7/lib" />
       <root url="file://C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/http-0.12.2/lib" />
       <root url="file://C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/http_parser-3.1.4/lib" />
       <root url="file://C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/js-0.6.2/lib" />

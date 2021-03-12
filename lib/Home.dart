@@ -142,7 +142,7 @@ class _HomeState extends State<Home> {
         children: [
           // 1st container start
           new Container(
-            height: 200.0,
+            height: 210.0,
             child: new Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -160,7 +160,7 @@ class _HomeState extends State<Home> {
                   height: 5.0,
                 ),
                 new Container(
-                  height: 140.0,
+                  height: 150.0,
                   margin: EdgeInsets.only(top: 8.0),
                   child: new ListView.builder(
                       scrollDirection: Axis.horizontal,
@@ -181,7 +181,7 @@ class _HomeState extends State<Home> {
                                   child: new Image.network(
                                     snapshot[index].data["image"],
                                     fit: BoxFit.cover,
-                                    height: 140,
+                                    height: 149,
                                   ),
                                 ),
                               ),
