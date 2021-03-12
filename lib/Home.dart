@@ -6,6 +6,7 @@ import 'package:flutter_newsportal_ud/Controller/LocalNews.dart';
 import 'package:flutter_newsportal_ud/Controller/PoliticsNews.dart';
 import 'package:flutter_newsportal_ud/Controller/SportsNews.dart';
 
+
 import 'dart:async';
 import 'DetailsLatestPost.dart';
 import 'package:carousel_pro/carousel_pro.dart';
@@ -71,7 +72,7 @@ class _HomeState extends State<Home> {
                 ),
                 onTap: () {
                   Navigator.of(context).pop();
-                  //Navigator.of(context).push(internationalNews.dart);
+                  Navigator.of(context).push(new MaterialPageRoute(builder: (context)=> InternationalNews()));
                 },
                 leading: new Icon(
                   Icons.next_week,
@@ -89,7 +90,7 @@ class _HomeState extends State<Home> {
                 ),
                 onTap: () {
                   Navigator.of(context).pop();
-                  //Navigator.of(context).push(internationalNews.dart);
+                  Navigator.of(context).push(new MaterialPageRoute(builder: (context)=> SportsNews()));
                 },
                 leading: new Icon(
                   Icons.sports,
@@ -107,7 +108,7 @@ class _HomeState extends State<Home> {
                 ),
                 onTap: () {
                   Navigator.of(context).pop();
-                  //Navigator.of(context).push(internationalNews.dart);
+                  Navigator.of(context).push(new MaterialPageRoute(builder: (context)=> LocalNews()));
                 },
                 leading: new Icon(
                   Icons.local_bar_rounded,
@@ -125,7 +126,7 @@ class _HomeState extends State<Home> {
                 ),
                 onTap: () {
                   Navigator.of(context).pop();
-                  //Navigator.of(context).push(internationalNews.dart);
+                  Navigator.of(context).push(new MaterialPageRoute(builder: (context)=> PoliticsNews()));
                 },
                 leading: new Icon(
                   Icons.adb,

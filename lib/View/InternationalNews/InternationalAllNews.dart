@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'dart:async';
 import 'package:flutter_slidable/flutter_slidable.dart';
+import 'package:flutter_newsportal_ud/View/InternationalNews/InternationalNews_PostDetails.dart';
 
 class InternationNews extends StatefulWidget {
   @override
@@ -105,7 +106,8 @@ class _InternationNewsState extends State<InternationNews> {
                                   // 1st container title, content
                                   Container(
                                     child: Column(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
                                       children: [
                                         Text(
                                           snapshot.data[index].data["title"],
@@ -136,7 +138,8 @@ class _InternationNewsState extends State<InternationNews> {
                                   // 2nd container start
                                   Container(
                                     child: Row(
-                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
                                       children: [
                                         // 1st container icon,text start
                                         Container(
@@ -149,35 +152,47 @@ class _InternationNewsState extends State<InternationNews> {
                                               SizedBox(
                                                 width: 5.0,
                                               ),
-                                              Text(snapshot.data[index]
-                                                      .data["views"] +
-                                                  "Views",
-                                              style: TextStyle(
-                                                fontSize: 12.0,
-                                                color: Colors.blueGrey,
-                                              ),),
+                                              Text(
+                                                snapshot.data[index]
+                                                        .data["views"] +
+                                                    " Views",
+                                                style: TextStyle(
+                                                  fontSize: 12.0,
+                                                  color: Colors.blueGrey,
+                                                ),
+                                              ),
                                             ],
                                           ),
                                         ),
                                         // 1st container icon,text end
 
                                         // 2nd container view details start
-                                        Container(
-                                          margin: EdgeInsets.only(right: 10.0),
-                                          decoration: BoxDecoration(
-                                            borderRadius:
-                                                BorderRadius.circular(15.0),
-                                            color: Colors.blueGrey,
-                                          ),
-                                          child: Align(
-                                            alignment: Alignment.center,
-                                            child: Padding(
-                                              padding: const EdgeInsets.all(8.0),
-                                              child: Text(
-                                                "View Details",
-                                                style: TextStyle(
-                                                  fontSize: 18.0,
-                                                  color: Colors.white,
+                                        InkWell(
+                                          onTap: () {
+                                            Navigator.of(context).push(
+                                                new MaterialPageRoute(
+                                                    builder: (context) =>
+                                                        Int_PostDetails(snapshot.data[index])));
+                                          },
+                                          child: Container(
+                                            margin:
+                                                EdgeInsets.only(right: 10.0),
+                                            decoration: BoxDecoration(
+                                              borderRadius:
+                                                  BorderRadius.circular(15.0),
+                                              color: Colors.blueGrey,
+                                            ),
+                                            child: Align(
+                                              alignment: Alignment.center,
+                                              child: Padding(
+                                                padding:
+                                                    const EdgeInsets.all(8.0),
+                                                child: Text(
+                                                  "View Details",
+                                                  style: TextStyle(
+                                                    fontSize: 15.0,
+                                                    color: Colors.white,
+                                                  ),
                                                 ),
                                               ),
                                             ),
